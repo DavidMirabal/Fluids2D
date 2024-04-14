@@ -16,7 +16,8 @@ Para ejecutar el código correctamente es necesario tener en el mismo directorio
 
 * `dmb_figures.py`: Incluye una clase para homogeneizar las figuras de manera más sencilla y rápida. También incluye una función para generar colores a partir de un mapa de matplotlib.
 
-> **ADVERTENCIA:** Si hubiera algún problema para generar figuras con el código es probable que sea por el punto anterior. Hay que tener en cuenta que se usa LaTeX para el texto de las figuras y si no se tiene instalado LaTeX y los paquetes correspondientes no funcionará. En este caso se recomienda comentar todos los *plt.rcParams* de `dmb_figures.py`.
+> [!WARNING]
+> Si hubiera algún problema para generar figuras con el código es probable que sea por el punto anterior. Hay que tener en cuenta que se usa LaTeX para el texto de las figuras y si no se tiene instalado LaTeX y los paquetes correspondientes no funcionará. En este caso se recomienda comentar todos los *plt.rcParams* de `dmb_figures.py`.
 
 * `scheme.py`: Incluye el cálculo del método numérico Lax-Friedrichs para un tiempo dado. Llamando a las funciones de la clase se puede establecer las condicones de contorno periódicas y obtener las variables calculadas.
 
@@ -36,7 +37,8 @@ Para ejecutar el código correctamente es necesario tener en el mismo directorio
 
     Se recomienda `resize=1` para mantener la calidad de los frames. Si los archivos de video empiezan a ser muy pesados si se recomienda bajar este valor. 
 
-> **ADVERTENCIA:** Para ejecutar este último script es necesario tener instalado *FFmpeg*.
+> [!WARNING]
+>  Para ejecutar este último script es necesario tener instalado *FFmpeg*.
 
 * `plot_mul_mom_angular.py`: Este script se ejecuta sin ningún argumento. Genera una figura donde muestra el momento angular en función del tiempo para multiples simulaciones. La variable *dir_stats* ha de definirse como el directorio donde se incluyen los csv que genera main.py de las simulaciones las cuales se quiere ver la evolución del momento angular. Además, intenta generar una figura de convergencia de la conservación del momento angular (para ello en el archivo de configuraciones se ha de escoger un nombre adecuado para la simulación, esto es poner NXXX donde XXX es el número de puntos por dimensión de la simulación).
 
