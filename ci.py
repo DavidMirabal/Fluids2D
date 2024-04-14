@@ -234,6 +234,7 @@ class gresho_vortex:  # es necesario que ejecutar funciones de esta clase en el 
         return self.P / (gamma - 1) + 0.5 * self.rho * self.v2
 
 
+# CI FOR FUN:
 # Gresho Vortex MOD (cambio el logaritmo neperiano por logaritmo en base 10)
 class gresho_vortexMOD:  # es necesario que ejecutar funciones de esta clase en el orden en el que aparecen
     def __init__(self, x_0_f: tuple, y_0_f: tuple, delta_x: float, delta_y: float):
