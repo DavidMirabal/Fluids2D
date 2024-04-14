@@ -1,0 +1,78 @@
+# ARCHIVO DE CONFIGURACION DE LA SIMULACIÓN
+
+[DIRECTORIOS]
+# Nombre característico de la simulación:
+nombre = GreshoVort
+
+# Directorio donde guardar cada frame generado:
+dir_images = vortex/images/
+
+# Directorio donde guardar plots del momento angular, lineal y energía:
+dir_stat = vortex/stat/
+
+[VISUAL]
+# Número de frames a generar:
+iteraciones = 100
+
+# Tiempo inicial de visulización:
+t_show = 0.0
+
+# Tiempo entre 2 frames consecutivos:
+dt_show = 0.03
+
+# Rangos para la visualización del mapa de densidades de materia, 
+# de velocidades y de densidades de energía:
+vmin_rho = 0.9
+vmax_rho = 1.1 
+vmin_v = 0.0
+vmax_v = 1.0
+vmin_p = 5.0
+vmax_p = 6.0
+
+# Cada cuántos puntos se muestra un vector de velocidad en el mapa de velocidades:
+d_v = 20
+
+[SIMULACION]
+# Número de puntos en cada eje:
+Nx = 250
+Ny = 250
+
+# Límites de la caja:
+x_0 = -0.5
+x_f = 0.5
+y_0 = -0.5
+y_f = 0.5
+
+# Densidad constante:
+rho_0 = 1
+
+# Índice adiabático:
+gamma = 1.4
+
+[CI]
+# Tipo de condiciones iniciales ('GreshoVortex' / 'SoundWaves')
+tipo_ci = GreshoVortex
+
+# Amplitud de la perturbación (solo usada en las SoundWaves)
+A_rho = 1e-4
+
+# Número de onda (solo usada en las SoundWaves)
+kx = 6.28
+ky = 0
+
+# Modo usados en X y en Y (solo usada en las SoundWaves):
+modo_x = +1
+modo_y = -1
+
+# Presión constante (solo usada en las SoundWaves):
+P_0 = 1
+
+# Desfase de la onda (solo usada en las SoundWaves):
+phi = 0
+
+[TRAZADORES]
+# Número partículas trazadoras en cada capa radial:
+N_part = 5, 8, 10, 10
+
+# Radios donde colocar las capas:
+radios = 0.1, 0.25, 0.35, 0.5
