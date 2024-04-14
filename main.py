@@ -88,9 +88,19 @@ elif config['CI']['tipo_ci'] == 'GreshoVortex':
     P = cond_ini.P()
     rho_e = cond_ini.rho_e(gamma)
 
+elif config['CI']['tipo_ci'] == 'GreshoVortexMOD':
+    cond_ini = ci.gresho_vortexMOD((x_0, x_f), (y_0, y_f), delta_x, delta_y)
+    r = cond_ini.r
+    X, Y = cond_ini.X, cond_ini.Y
+    rho = cond_ini.rho(rho_0)
+    vx, vy, v2, v = cond_ini.v()
+    flux_vx, flux_vy = cond_ini.flux_v()
+    P = cond_ini.P()
+    rho_e = cond_ini.rho_e(gamma)
+
 else:
     sys.exit(
-        "Error: El tipo de condición inicial especificado en 'tipo_ci' no está disponible."
+        "Error: El tipo de condición inicial ('tipo_ci') especificado en el archivo de configuración no está disponible."
     )
 
 # TRAZADORES

@@ -62,6 +62,7 @@ fig.tight_layout()
 fig.subplots_adjust(hspace=0)
 fig.savefig(f'{dir_stats}MUL_mom_angular.pdf')
 
+
 try:
     fig_cl = figures.Figura()
     fig, ax = fig_cl.axs()
@@ -79,6 +80,7 @@ try:
     ax[0].set_xlabel(r'${\rm Puntos\quad por\quad dimensi\acute{o}n}$', fontsize=18)
     ax[0].set_ylabel(r'${\rm Par\acute{a}metro\quad de\quad error}$', fontsize=18)
     fig.savefig(f'{dir_stats}CONV_mom_angular.pdf')
+
 
 except:
     pass
