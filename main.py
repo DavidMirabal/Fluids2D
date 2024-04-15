@@ -51,10 +51,10 @@ next_show = dt_show + t_show
 
 # SIMULACIÓN
 Nx, Ny = config.getint('SIMULACION', 'Nx'), config.getint('SIMULACION', 'Ny')
-delta_x = 1 / (Nx - 2)
-delta_y = 1 / (Ny - 2)
 x_0, x_f = config.getfloat('SIMULACION', 'x_0'), config.getfloat('SIMULACION', 'x_f')
 y_0, y_f = config.getfloat('SIMULACION', 'y_0'), config.getfloat('SIMULACION', 'y_f')
+delta_x = (x_f - x_0) / (Nx - 2)
+delta_y = (y_f - y_0) / (Ny - 2)
 rho_0 = config.getfloat('SIMULACION', 'rho_0')
 gamma = config.getfloat('SIMULACION', 'gamma')
 
