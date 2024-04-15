@@ -67,5 +67,5 @@ El código se ha testeado con Python 3.10, son obligatorios los siguientes paque
  * `Numpy`
  * `Matplotlib`
 
-Como ya se ha mencionado, si se quiere generar video y no solo los frames se ha de instalar el software `FFmpeg`.
+Como ya se ha mencionado, si se quiere generar video y no solo los frames se ha de instalar el software `FFmpeg`. Se usan los siguientes paquetes internos de Python: `os`, `sys`, `tqdm`, `configparser`, `subprocess` y `PIL`.
 
