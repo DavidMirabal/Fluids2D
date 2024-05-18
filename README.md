@@ -2,7 +2,6 @@
 
 Hecho por David Mirabal Betancort
 
-Técnicas de Simulaciones Numérica, 2024
 
 ## Uso del código:
 
